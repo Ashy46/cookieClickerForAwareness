@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Farming Cookie Clicker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #4a4a4a;
+            margin-bottom: 20px;
+        }
+        #cookie-image {
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        #cookie-image:hover {
+            transform: scale(1.05);
+        }
+        .cookie-click {
+            transform: scale(0.95) !important;
+        }
+        #cookie-count {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 20px 0;
+        }
+        #fact {
+            margin-top: 20px;
+            font-style: italic;
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sustainable Farming Clicker</h1>
+        <img id="cookie-image" src="cookie2.jpg" alt="Cookie" onclick="addOne()">
+        <p id="cookie-count">Cookies: 0</p>
+        <p>Click the Cookie to Learn about Sustainable Farming</p>
+        <p id="fact"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
